@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  overflow: scroll;
+  background-image: url('/123.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+h1 {
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #333;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  animation: colorChange 5s infinite alternate;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+p {
+  font-size: 18px;
+  color: #ff4500;
+  margin-top: 8px;
+}
+@keyframes colorChange {
+  0% {
+    color: rgb(10, 10, 250);
+  }
+  50% {
+    color: #f5f0f7;
+  }
+  100% {
+    color: rgb(235, 49, 173);
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+    text-shadow: 2px 2px 2px rgba(78, 78, 78, 0.3);
+    padding: 8px;
+  }
+  p {
+    font-size: 12px;
+    text-shadow: 2px 2px 2px rgba(78, 78, 78, 0.3);
+    padding: 8px;
+  }
+}
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
